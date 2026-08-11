@@ -21,3 +21,7 @@ python nombre_del_archivo.py
 
 Este repositorio permite mantener organizado el trabajo del curso y llevar un
 historial de los cambios realizados mediante Git.
+
+## Autor
+
+- Nombre: Nathalie Gabriela Miranda Rejón
