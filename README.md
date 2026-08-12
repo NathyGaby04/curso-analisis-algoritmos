@@ -26,3 +26,4 @@ historial de los cambios realizados mediante Git.
 
 - Nombre: Nathalie Gabriela Miranda Rejón
 - Correo de contacto: nathalie040904@gmail.com / nathaliemiranda1117738@correo.itm.edu.co
+- Semestre: 2026-2
