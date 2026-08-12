@@ -25,3 +25,4 @@ historial de los cambios realizados mediante Git.
 ## Autor
 
 - Nombre: Nathalie Gabriela Miranda Rejón
+- Correo de contacto: nathalie040904@gmail.com / nathaliemiranda1117738@correo.itm.edu.co
