@@ -3,6 +3,8 @@
 Complete las funciones siguiendo la especificación de cada docstring.
 """
 
+import statistics
+
 
 def es_bisiesto(anio: int) -> bool:
     """Determina si un año es bisiesto.
@@ -42,9 +44,13 @@ def leer_anios() -> list[int]:
 
         try:
             anios = [int(anio.strip()) for anio in entrada.split(",")]
+
+            if any(anio < 0 for anio in anios):
+                raise ValueError
+
             return anios
         except ValueError:
-            print("Entrada inválida. Ingrese solo años separados por comas.")
+            print("Entrada inválida. Ingrese años separados por comas y no negativos.")
 
 
 def main() -> None:
@@ -58,6 +64,19 @@ def main() -> None:
         f"Cantidad de años bisiestos: "
         f"{len(anios_bisiestos)} de {len(anios)}"
     )
+
+    decadas = sorted(set(anio // 10 * 10 for anio in anios))
+    anios_por_decada = {
+        decada: [anio for anio in anios if anio // 10 * 10 == decada]
+        for decada in decadas
+    }
+
+    print(f"Años agrupados por década: {anios_por_decada}")
+
+    if anios_bisiestos:
+        promedio = statistics.mean(anios_bisiestos)
+        print(f"Promedio de años bisiestos: {promedio}")
+
 
 if __name__ == "__main__":
     main()
