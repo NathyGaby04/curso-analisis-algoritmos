@@ -1,6 +1,6 @@
 ## Laboratorio evaluativo 01
 
-### Punto 1 — Análisis del algoritmo
+### Punto 1 — Analizar el algoritmo antes de comprar hardware
 
 Considero que el problema principal de Tamiza no es que el algoritmo utilizado durante 8 años haya sido incorrecto, sino que las condiciones en las que se utiliza cambiaron muchísimo. Hace ocho años se trabajaba con aproximadamente 20.000 registros y solamente cuatro municipios, mientras que actualmente se deben procesar 1.200.000 registros en la misma ventana de cuatro horas. Por esto, que el algoritmo haya funcionado correctamente durante ocho años no significa que siga siendo viable con la cantidad de información que procesa actualmente.
 
@@ -12,3 +12,14 @@ Como segundo ejemplo, puedo hablar de una experiencia de mis prácticas profesio
 
 Aunque Liza podía funcionar correctamente en muchos casos, estas situaciones muestran que un sistema puede cumplir su función general y aun así presentar problemas cuando las condiciones o la cantidad de información aumentan, además, en algunos casos se presentaban demoras o no se obtenía respuesta, lo que también representa una restricción de tiempo para el usuario. Por esto, considero que no basta con que un algoritmo o sistema funcione, sino que también debe cumplir las condiciones de tiempo y recursos necesarias para el contexto en el que se utiliza.
 
+### Punto 2 — Responsabilidad ambiental y ética de la implementación
+
+Como responsable técnico considero que elegir el algoritmo de ordenamiento no solamente implica pensar en si el programa funciona correctamente, sino también en los recursos que necesita y en las consecuencias que puede tener su funcionamiento. Por ejemplo, en este caso se deben procesar 1.200.000 registros todas las madrugadas durante una ventana de cuatro horas, por lo que la cantidad de trabajo que realiza el algoritmo también tiene un impacto sobre los recursos que utilizamos.
+
+Desde la responsabilidad ambiental, puedo decir que aunque el proceso se realice entre las 2:00 a. m. y las 6:00 a. m., esto no significa que no tenga un consumo de recursos porque no sea jornada laboral, ya que durante esas cuatro horas los servidores deben mantenerse funcionando y realizando el procesamiento de los datos, lo que implica consumo de energía y utilización de recursos computacionales. Si el algoritmo necesita realizar una cantidad muy grande de operaciones para ordenar los registros, puede utilizar estos recursos durante más tiempo o con mayor intensidad de la necesaria. Además, este consumo no ocurre una sola vez, sino que al ejecutar el proceso todas las madrugadas durante meses o años, un consumo que puede parecer pequeño en una ejecución se acumula en miles de ejecuciones. Por esta razón, elegir un algoritmo eficiente también permite utilizar de manera más responsable la infraestructura disponible.
+
+Ya desde el lado ético considero que la responsabilidad es todavía mayor porque el ordenamiento de los datos no se hace simplemente para organizar una lista, sino que el resultado determina el orden en el que el centro de contacto comenzará a comunicarse con los pacientes. O sea, los registros con mayor riesgo deben aparecer primero para que puedan ser atendidos con prioridad.
+
+Un primer caso sería el de un paciente con un nivel de riesgo alto que, debido a un ordenamiento incorrecto, quede ubicado después de pacientes con menor prioridad. El costo del error lo asumiría principalmente el paciente, porque podría recibir más tarde una atención que debía tener prioridad. Un segundo caso sería el de un operador del centro de contacto que recibe una lista incompleta o desordenada (como ya se ha presentado) y debe trabajar con ella a pesar de que no representa correctamente las prioridades. En este caso, el operador asumiría el costo en forma de una mayor carga de trabajo y la dificultad de realizar correctamente su función. También hay que tener en cuenta que obviamente la organización y el equipo de desarrollo tienen responsabilidad por el fallo, pero sus consecuencias no recaerían de la misma manera que sobre las personas que dependen directamente del resultado.
+
+En conclusión, podemos decir que como responsable técnico no solamente debo preocuparme porque el algoritmo termine dentro del tiempo disponible, sino también porque produzca un resultado correcto. Además, hay que tener en cuenta que la velocidad no puede conseguirse a costa de ordenar incorrectamente los pacientes, ya que en este caso el orden de la lista decide a quién se llama primero y, por lo tanto, iría en contra del objetivo del proyecto.
