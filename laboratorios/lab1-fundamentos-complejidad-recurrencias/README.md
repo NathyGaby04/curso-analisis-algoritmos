@@ -1,0 +1,14 @@
+## Laboratorio evaluativo 01
+
+### Punto 1 — Análisis del algoritmo
+
+Considero que el problema principal de Tamiza no es que el algoritmo utilizado durante 8 años haya sido incorrecto, sino que las condiciones en las que se utiliza cambiaron muchísimo. Hace ocho años se trabajaba con aproximadamente 20.000 registros y solamente cuatro municipios, mientras que actualmente se deben procesar 1.200.000 registros en la misma ventana de cuatro horas. Por esto, que el algoritmo haya funcionado correctamente durante ocho años no significa que siga siendo viable con la cantidad de información que procesa actualmente.
+
+Por ejemplo, un algoritmo puede entregar una lista correctamente ordenada y aun así no ser viable si necesita más tiempo o recursos de los disponibles. Este es el caso que se está presentando en Tamiza, donde la lista debe estar lista entre las 2:00 a. m. y las 6:00 a. m. y ya se ha presentado tres veces el problema de que el proceso no termina a tiempo. Esto significa que aunque el algoritmo pueda ordenar correctamente los datos, está incumpliendo una condición necesaria para que el sistema funcione como se necesita.
+
+Por esto, antes de realizar una inversión para duplicar la velocidad del servidor considero que primero se debería analizar el algoritmo actual y cómo aumenta su tiempo de ejecución cuando aumenta la cantidad de datos, y que al aumentar la velocidad del servidor podría disminuir el tiempo que tarda actualmente el proceso, pero no cambia la forma en que crece el trabajo que procesa el algoritmo. Si la cantidad de datos sigue aumentando, una mejora de hardware podría solucionar el problema durante un tiempo, pero ahora nos preguntaríamos ¿por cuánto tiempo? por esto considero más adecuado analizar primero el algoritmo y buscar una alternativa que pueda manejar mejor el crecimiento de los datos.
+
+Como segundo ejemplo, puedo hablar de una experiencia de mis prácticas profesionales en Tigo, donde analicé el comportamiento de Liza, el bot de atención mediante WhatsApp. En un análisis de aproximadamente 5.500 chats realizado con otros tres compañeros, encontramos cerca de 1.700 casos con inconsistencias en el comportamiento esperado de Liza. Por ejemplo, en algunos casos Liza no interpretaba correctamente una solicitud, mostraba información que ya no estaba disponible o no realizaba una transferencia a un asesor cuando era necesario.
+
+Aunque Liza podía funcionar correctamente en muchos casos, estas situaciones muestran que un sistema puede cumplir su función general y aun así presentar problemas cuando las condiciones o la cantidad de información aumentan, además, en algunos casos se presentaban demoras o no se obtenía respuesta, lo que también representa una restricción de tiempo para el usuario. Por esto, considero que no basta con que un algoritmo o sistema funcione, sino que también debe cumplir las condiciones de tiempo y recursos necesarias para el contexto en el que se utiliza.
+
