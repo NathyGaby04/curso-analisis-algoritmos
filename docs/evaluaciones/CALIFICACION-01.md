@@ -45,7 +45,7 @@ Muy buen trabajo en general: el informe es completo y sus afirmaciones se apoyan
 - Funciones con *type hints* y *docstrings*.
 
 **Lo que puede mejorar:**
-- Faltan líneas en blanco entre funciones y un salto de línea al final de varios archivos (PEP 8).
+- Faltan líneas en blanco entre funciones (PEP 8).
 - `parte3_casos.py` y `parte4_complejidad.py` son código suelto sin funciones, y `parte4_complejidad.py` no tiene descripción al inicio.
 
 ## 4. Calidad del análisis de las gráficas (18 / 20)
@@ -71,5 +71,5 @@ Sí. Los dos scripts corren sin errores, ordenan bien y regeneran las gráficas,
 ## Para el próximo laboratorio
 - Cuando dé un ejemplo propio, indique qué se procesa, cuántos datos hay y qué restricción concreta se incumple.
 - Repita las mediciones varias veces y grafique el promedio, aclarándolo en el informe.
-- Organice los scripts en funciones y corrija los detalles de PEP 8 (líneas en blanco, final de archivo).
+- Organice los scripts en funciones y corrija los detalles de PEP 8 (líneas en blanco entre funciones).
 - Cuando explique el caso promedio, muestre el cálculo y no solo la idea general.
