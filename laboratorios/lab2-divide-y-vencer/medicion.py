@@ -92,6 +92,17 @@ for n in tamaños:
     tiempos_divide.append(total_divide / repeticiones)
 
 
+# Muestra los tiempos obtenidos para analizar los resultados en la Parte 3.
+print("Resultados de las mediciones:")
+
+for i in range(len(tamaños)):
+    print(
+        "n =", tamaños[i],
+        "| Fuerza bruta:", tiempos_fuerza[i],
+        "| Divide y vencerás:", tiempos_divide[i]
+    )
+
+
 plt.plot(
     tamaños,
     tiempos_fuerza,
